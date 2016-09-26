@@ -52,8 +52,11 @@ typedef int zeroborg;
 
 #define IR_MAX_BYTES             I2C_LONG_LEN - 2
 
+int FlashLed( );
 
 int ScanForZeroBorg(int device);
+
+int SetMotor(int motor, float power);
 
 int ZeroBorgInit(int device);
 
